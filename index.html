@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoComment. — Keep the feed. Skip the arguments.</title>
+  <meta name="description" content="Social apps promote argumentative and offensive comments to keep you hooked. NoComment closes those sections so you can watch without getting pulled into arguments.">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    if (location.hash === "#privacy" || /\/privacy\/?$/.test(location.pathname)) {
+      document.documentElement.dataset.view = "privacy";
+    }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="#top" data-view="home">
+        <img src="icon.png" alt="" width="36" height="36">
+        NoComment.
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#how" data-view="home">How it works</a>
+        <a href="#privacy" data-view="privacy">Privacy</a>
+        <a href="mailto:support@nocommentapp.io" target="_blank" rel="noopener noreferrer">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <div data-panel="home">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="kicker">Android</p>
+            <h1>Keep the feed. Skip the arguments.</h1>
+            <p class="lede">Social apps don’t just show comments. They push the argumentative and offensive ones up, because a spike of anger holds you longer than the post did. NoComment closes those sections, so you can watch, read, and scroll without getting pulled into arguments.</p>
+            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nocomment.io" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;">
+              <img src="play-badge.png" alt="Get it on Google Play">
+            </a>
+            <p class="apps-label">Only these apps. NoComment does not look at anything else on your phone.</p>
+            <ul class="apps">
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>Threads</li>
+              <li>YouTube</li>
+              <li>TikTok</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+          <figure class="hero-shot">
+            <div class="shot-scroller" id="shot-scroller" tabindex="0" aria-label="App screenshots">
+              <img src="shots/home.png" alt="NoComment home screen with protection on and a pause control" width="640" height="1138">
+              <img src="shots/blocking.png" alt="Blocking screen with switches for Facebook, Instagram, LinkedIn, Threads, and TikTok" width="640" height="1138">
+              <img src="shots/settings.png" alt="Settings screen explaining how NoComment closes comment sections on this phone" width="640" height="1138">
+            </div>
+            <div class="shot-nav" role="tablist" aria-label="Screenshots">
+              <button type="button" aria-current="true">Home</button>
+              <button type="button">Blocking</button>
+              <button type="button">Settings</button>
+            </div>
+          </figure>
+        </section>
+
+        <section class="section">
+          <div class="card story">
+            <h2>The comments are the product.</h2>
+            <div class="prose">
+              <p>You opened the app for a video, a photo, a post. The comment sheet is waiting because a fight keeps you on the screen. Replies that offend you get lifted. Calm ones sink. A lot of what reaches the top is bots and strangers, ranked to provoke you, going nowhere.</p>
+              <p>You still get the thing you came for. You don’t spend the next twenty minutes answering someone, or something, that gives you nothing back.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="how">
+          <h2>How it works</h2>
+          <p>You turn on an Android Accessibility service. NoComment uses it for one job: notice an open comment section, then close it.</p>
+          <div class="grid">
+            <article class="card step">
+              <p class="num">01</p>
+              <h3>You pick the apps</h3>
+              <p>Choose which installed apps to block. You can pause it for a minute or five when you actually want the comments.</p>
+            </article>
+            <article class="card step">
+              <p class="num">02</p>
+              <h3>It reads the layout</h3>
+              <p>The service looks at view IDs and visible text in those apps, only long enough to tell that comments are open.</p>
+            </article>
+            <article class="card step">
+              <p class="num">03</p>
+              <h3>It closes them</h3>
+              <p>That screen content stays in memory on the device. It is not stored, logged, or sent anywhere.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div data-panel="privacy">
+        <header class="policy-head">
+          <p class="kicker">NoComment Android app</p>
+          <h1>Privacy policy</h1>
+          <p class="updated">Last updated 26 October 2026</p>
+        </header>
+
+        <aside class="card summary">
+          <h2>Short version</h2>
+          <dl>
+            <dt>Collected</dt>
+            <dd>Nothing is sent to NoComment. There is no account.</dd>
+            <dt>On device</dt>
+            <dd>Which supported apps have blocking on, and whether blocking is paused.</dd>
+            <dt>Accessibility</dt>
+            <dd>On-screen layout of the social apps you enable, used only to close comment sections, then discarded.</dd>
+            <dt>Shared</dt>
+            <dd>Not sold, shared, or transmitted by the app.</dd>
+            <dt>Contact</dt>
+            <dd><a href="mailto:support@nocommentapp.io">support@nocommentapp.io</a></dd>
+          </dl>
+        </aside>
+
+        <section>
+          <h2>Who this covers</h2>
+          <p>This policy describes how the NoComment app (“NoComment”) handles information on your device. It is the public copy of the policy shown inside the app. Contact <a href="mailto:support@nocommentapp.io">support@nocommentapp.io</a> with questions.</p>
+        </section>
+
+        <section>
+          <h2>What NoComment stores</h2>
+          <p>NoComment stores only the settings you choose on this device: which supported apps have blocking turned on, and whether blocking is temporarily paused. Those settings stay in local app storage. NoComment does not create an account.</p>
+          <p>If Android backup is turned on for the phone, Android may include that local storage in your personal device backup. NoComment does not receive that backup.</p>
+        </section>
+
+        <section>
+          <h2>Accessibility</h2>
+          <p>If you turn on the NoComment Accessibility service, the app reads the on-screen layout of Instagram, Facebook, Threads, YouTube, TikTok, and LinkedIn (view IDs and visible text) to detect comment sections. When a comment section is open in an app you have enabled, NoComment presses Back to close it.</p>
+          <p>That screen content is processed in memory on this device. It is not stored, logged, or sent anywhere. NoComment does not look at other apps. It does not type, tap other controls, or change system settings.</p>
+        </section>
+
+        <section>
+          <h2>What NoComment does not collect</h2>
+          <p>NoComment does not use the internet, analytics, advertising, crash reporting, or third-party trackers. It does not collect:</p>
+          <ul>
+            <li>Names, email addresses, or account identifiers</li>
+            <li>Precise location</li>
+            <li>Contacts, photos, or files</li>
+            <li>Payment information</li>
+            <li>Browsing history or keystrokes</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Sharing</h2>
+          <p>NoComment does not share, sell, or transmit your information to anyone, including advertisers. If you contact support by email, that conversation is handled in your email app, not inside NoComment.</p>
+        </section>
+
+        <section>
+          <h2>Your choices</h2>
+          <p>You can refuse Accessibility access and still open the app. You can turn the service off in Android Settings → Accessibility, pause blocking from Home, or uninstall NoComment to delete local settings.</p>
+        </section>
+
+        <section>
+          <h2>Children</h2>
+          <p>NoComment is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+        </section>
+
+        <section>
+          <h2>Changes</h2>
+          <p>If this policy changes, the updated text will be posted on this page and in the app, with a new “last updated” date.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>NoComment.</span>
+      <a href="mailto:support@nocommentapp.io" target="_blank" rel="noopener noreferrer">support@nocommentapp.io</a>
+    </footer>
+  </div>
+  <script src="app.js?v=3"></script>
+</body>
+</html>
